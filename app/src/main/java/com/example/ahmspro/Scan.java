@@ -21,7 +21,7 @@ public class Scan extends Fragment  {
 
         View view = inflater.inflate(R.layout.fragment_scan2,container,false);
         scan  = (Button)view.findViewById(R.id.Bt);
-        data = (TextView)getActivity().findViewById(R.id.data);
+        data = (TextView)view.findViewById(R.id.data);
 
 
 
