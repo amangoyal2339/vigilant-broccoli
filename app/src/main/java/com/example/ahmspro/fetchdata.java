@@ -1,6 +1,7 @@
 package com.example.ahmspro;
 
 import android.os.AsyncTask;
+import android.widget.Button;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -32,20 +33,23 @@ public class fetchdata extends AsyncTask<Void, Void, Void> {
                 line = bufferedReader.readLine();
                 data = data + line;
             }
-
+            Scan objscan = new Scan();
             JSONArray JA = new JSONArray(data);
             for (int i = 0; i < JA.length(); i++) {
+
                 JSONObject JO = (JSONObject) JA.get(i);
-                data3 = "Date" + JO.get("date") + "\n" +
-                        "Faculty Name" + JO.get("faculty_name") + "\n" +
-                        "Date" + JO.get("first_name") + "\n" +
-                        "Date" + JO.get("has_stayback") + "\n" +
-                        "Date" + JO.get("last_name") + "\n" +
-                        "Date" + JO.get("reason") + "\n" +
-                        "Date" + JO.get("student_id") + "\n" +
-                        "Date" + JO.get("time") + "\n";
-                data2 = data2 + data3;
-            }
+                if(objscan.rollno == JO.get("student_id")){
+                data3 = "Date:-" + JO.get("date") + "\n" +
+                        "Faculty Name:-" + JO.get("faculty_name") + "\n" +
+                        "First name:-" + JO.get("first_name") + "\n" +
+                        "Stayback:-" + JO.get("has_stayback") + "\n" +
+                        "Last name:-" + JO.get("last_name") + "\n" +
+                        "Reason:-" + JO.get("reason") + "\n" +
+                        "id:-" + JO.get("student_id") + "\n" +
+                        "time:-" + JO.get("time") + "\n";
+                // data2 = data2 + data3;
+
+            }}
 
         } catch (Exception e) {
             e.printStackTrace();
@@ -59,7 +63,7 @@ public class fetchdata extends AsyncTask<Void, Void, Void> {
         super.onPostExecute(aVoid);
 
         senddata();
-        //MainActivity.data.setText(this.data2);
+        //MainActivity.data.setText(this.data3);
 
 
     }
