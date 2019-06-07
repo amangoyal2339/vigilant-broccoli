@@ -17,7 +17,7 @@ import java.net.URL;
 public class fetchdata extends AsyncTask<Void, Void, Void> {
 
     String data = "";
-    String data2 = "";
+   static  String data2 = "";
     String data3 = "";
 
     @Override
@@ -32,6 +32,7 @@ public class fetchdata extends AsyncTask<Void, Void, Void> {
                 line = bufferedReader.readLine();
                 data = data + line;
             }
+
             JSONArray JA = new JSONArray(data);
             for (int i = 0; i < JA.length(); i++) {
                 JSONObject JO = (JSONObject) JA.get(i);
@@ -52,13 +53,18 @@ public class fetchdata extends AsyncTask<Void, Void, Void> {
         return null;
     }
 
+
     @Override
     protected void onPostExecute(Void aVoid) {
         super.onPostExecute(aVoid);
 
+        senddata();
+        //MainActivity.data.setText(this.data2);
 
-        MainActivity.data.setText(this.data2);
 
     }
 
+    public static String senddata() {
+        return data2;
+    }
 }
