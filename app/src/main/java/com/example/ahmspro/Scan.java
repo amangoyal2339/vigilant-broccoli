@@ -14,8 +14,8 @@ import android.widget.Toast;
 
 public class Scan extends Fragment  {
     Button scan;
-    TextView data;
-    EditText rollno;
+    static TextView data;
+   static EditText rollno;
 
     @Nullable
     @Override
@@ -24,10 +24,7 @@ public class Scan extends Fragment  {
         View view = inflater.inflate(R.layout.fragment_scan2,container,false);
         scan  = (Button) view.findViewById(R.id.Bt);
         rollno = (EditText)view.findViewById(R.id.Et);
-        rollno.getText().toString();
         data = (TextView) view.findViewById(R.id.data);
-
-
 
         scan.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -35,13 +32,16 @@ public class Scan extends Fragment  {
 
                 fetchdata process = new fetchdata();
                 process.execute();
-                String d = fetchdata.senddata();
-                Toast.makeText(getContext(), d, Toast.LENGTH_SHORT).show();
-                data.setText(d);
             }
 
 
         });
         return view;
     }
+
+    public static String text(){
+        String s = rollno.getText().toString();
+        return s;
+    }
+
 }

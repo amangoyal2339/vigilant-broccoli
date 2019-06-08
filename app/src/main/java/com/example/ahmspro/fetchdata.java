@@ -1,8 +1,6 @@
 package com.example.ahmspro;
 
 import android.os.AsyncTask;
-import android.widget.Button;
-
 import org.json.JSONArray;
 import org.json.JSONObject;
 
@@ -18,8 +16,7 @@ import java.net.URL;
 public class fetchdata extends AsyncTask<Void, Void, Void> {
 
     String data = "";
-   static  String data2 = "";
-    String data3 = "";
+    static String data3 = "";
 
     @Override
     protected Void doInBackground(Void... voids) {
@@ -33,23 +30,24 @@ public class fetchdata extends AsyncTask<Void, Void, Void> {
                 line = bufferedReader.readLine();
                 data = data + line;
             }
-            Scan objscan = new Scan();
+            //Scan objscan = new Scan();
             JSONArray JA = new JSONArray(data);
+            String rollno = Scan.text();
             for (int i = 0; i < JA.length(); i++) {
 
                 JSONObject JO = (JSONObject) JA.get(i);
-                if(objscan.rollno == JO.get("student_id")){
-                data3 = "Date:-" + JO.get("date") + "\n" +
-                        "Faculty Name:-" + JO.get("faculty_name") + "\n" +
-                        "First name:-" + JO.get("first_name") + "\n" +
-                        "Stayback:-" + JO.get("has_stayback") + "\n" +
-                        "Last name:-" + JO.get("last_name") + "\n" +
-                        "Reason:-" + JO.get("reason") + "\n" +
-                        "id:-" + JO.get("student_id") + "\n" +
-                        "time:-" + JO.get("time") + "\n";
-                // data2 = data2 + data3;
-
-            }}
+                if(rollno.equals(JO.get("student_id").toString())){
+                    data3 = "Date:-" + JO.get("date") + "\n" +
+                            "Faculty Name:-" + JO.get("faculty_name") + "\n" +
+                            "First name:-" + JO.get("first_name") + "\n" +
+                            "Stayback:-" + JO.get("has_stayback") + "\n" +
+                            "Last name:-" + JO.get("last_name") + "\n" +
+                            "Reason:-" + JO.get("reason") + "\n" +
+                            "id:-" + JO.get("student_id") + "\n" +
+                            "time:-" + JO.get("time") + "\n";
+                    // data2 = data2 + data3;
+                    Scan.data.setText(data3);
+                }}
 
         } catch (Exception e) {
             e.printStackTrace();
@@ -61,14 +59,8 @@ public class fetchdata extends AsyncTask<Void, Void, Void> {
     @Override
     protected void onPostExecute(Void aVoid) {
         super.onPostExecute(aVoid);
-
-        senddata();
         //MainActivity.data.setText(this.data3);
 
 
-    }
-
-    public static String senddata() {
-        return data2;
     }
 }
