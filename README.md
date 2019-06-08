@@ -21,4 +21,6 @@ SCAN is the place were the user has to enter roll number of the respective stude
 
 ---------------------------------
 
+above images is the preview of the app .
+
 
