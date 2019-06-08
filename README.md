@@ -12,3 +12,13 @@ SCAN is the place were the user has to enter roll number of the respective stude
 
 -------------------------------------
 
+![WhatsApp Image 2019-06-08 at 8 17 24 PM](https://user-images.githubusercontent.com/51189244/59149291-56743e00-8a31-11e9-9c36-5f49d2c6ece5.jpeg)
+
+---------------------------------------
+
+
+![WhatsApp Image 2019-06-0sx8 at 9 01 42 PM](https://user-images.githubusercontent.com/51189244/59149292-57a56b00-8a31-11e9-9afc-55841e48a41c.jpeg)
+
+---------------------------------
+
+
