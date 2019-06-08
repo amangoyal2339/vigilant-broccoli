@@ -5,3 +5,4 @@ This app is mock version of the AHMS app which helps maintaining records of Host
 This app has three sections ADD,SCAN,DELETE .
 SCAN is the place were the user has to enter roll number of the respective student to get the details .
 
+# Preview
