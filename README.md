@@ -38,20 +38,13 @@ https://github.com/Github-Username/vigilant-broccoli.git
 after cloning you would see a clone of your repo ,open that and build your android project in that folder. after that just add,commit and push the project back to repo using bash commands.
 
 # Screenshots :performing_arts:
---------------------------
-
-![WhatsApp Image 2019-06-08 at 9 01 42 PM](https://user-images.githubusercontent.com/51189244/59149258-e796e500-8a30-11e9-9d91-544643d49740.jpeg)
-
--------------------------------------
-
-![WhatsApp Image 2019-06-08 at 8 17 24 PM](https://user-images.githubusercontent.com/51189244/59149291-56743e00-8a31-11e9-9c36-5f49d2c6ece5.jpeg)
-
----------------------------------------
 
 
-![WhatsApp Image 2019-06-0sx8 at 9 01 42 PM](https://user-images.githubusercontent.com/51189244/59149292-57a56b00-8a31-11e9-9afc-55841e48a41c.jpeg)
+![](https://user-images.githubusercontent.com/51189244/59149258-e796e500-8a30-11e9-9d91-544643d49740.jpeg)
+![](https://user-images.githubusercontent.com/51189244/59149291-56743e00-8a31-11e9-9c36-5f49d2c6ece5.jpeg)
+![](https://user-images.githubusercontent.com/51189244/59149292-57a56b00-8a31-11e9-9afc-55841e48a41c.jpeg)
 
----------------------------------
+
 
 above images is the preview of the app .
 
