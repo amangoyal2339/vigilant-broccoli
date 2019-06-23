@@ -18,7 +18,7 @@ Android Studio, with a recent version of the Android SDK.
 Setting up your development environment
 
 * Download and install Git.
-* Fork the TempleApp project
+* Fork the project
 * Clone your fork of the project locally. At the command line:
 
 
