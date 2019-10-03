@@ -1,7 +1,7 @@
 # vigilant-broccoli
 Android Client for Amrita Hostel Management System(AHMS) :mortar_board:
 
-This app is mock version of the AHMS app which helps maintaining records of Hostelers . Using this app,the invigilator can check whether the students has stayback or not , with complete details of that student . This app can also Add and delete student profile (but that is under maintaince ) .
+This app is mock version of the AHMS app which helps maintaining records of hostelers . Using this app, the invigilator can check whether the students has stayback or not , with complete details of that student . This app can also Add and delete student profile (but that is under maintaince ) .
 This app has three sections ADD,SCAN,DELETE .
 SCAN is the place were the user has to enter roll number of the respective student to get the details .
 
@@ -35,7 +35,7 @@ If you prefer not to use the command line, you can use Android Studio to create 
 https://github.com/Github-Username/vigilant-broccoli.git
 
 ```
-after cloning you would see a clone of your repo ,open that and build your android project in that folder. after that just add,commit and push the project back to repo using bash commands.
+After cloning you would see a clone of your repo ,open that and build your android project in that folder. After that just add, commit and push the project back to repo using bash commands.
 
 # Screenshots :performing_arts:
 
