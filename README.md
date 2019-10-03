@@ -1,5 +1,5 @@
 # vigilant-broccoli
-Android Client for AHMS Hostel Management System(AHMS) :mortar_board:
+Android Client for Amrita Hostel Management System(AHMS) :mortar_board:
 
 This app is mock version of the AHMS app which helps maintaining records of Hostelers . Using this app,the invigilator can check whether the students has stayback or not , with complete details of that student . This app can also Add and delete student profile (but that is under maintaince ) .
 This app has three sections ADD,SCAN,DELETE .
