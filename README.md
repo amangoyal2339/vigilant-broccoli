@@ -53,7 +53,7 @@ above images is the preview of the app .
 
 ## Acknowledgments :raised_hands:
 
-* Mentors at Foss@amrita
+* Mentors at amFOSS
 * Google
 
 
